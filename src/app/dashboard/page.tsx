@@ -16,15 +16,17 @@ const Page = async () => {
 
   if (!dbUser) redirect("/auth-callback?origin=dashboard");
 
-  return <Dashboard />;
-};
+  return (
+    <div>
+      <Dashboard />
 
-export default Page;
-
-{
-  /* {user.email !== null ? (
+      {user.email !== null ? (
         <div>Usuario logueado: {user.email}</div>
       ) : (
         <div>Usuario no logueado</div>
-      )} */
-}
+      )}
+    </div>
+  );
+};
+
+export default Page;
