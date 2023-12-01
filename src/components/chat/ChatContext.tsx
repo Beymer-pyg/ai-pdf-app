@@ -1,7 +1,9 @@
-import React, { ReactNode, createContext, useState } from "react";
+"use client";
+
+import { ReactNode, createContext, useState } from "react";
 import { useToast } from "../ui/use-toast";
-import { trpc } from "@/app/_trpc/client";
 import { useMutation } from "@tanstack/react-query";
+import { trpc } from "@/app/_trpc/client";
 
 type StreamResponse = {
   addMessage: () => void;
@@ -44,7 +46,7 @@ export const ChatContextProvider = ({ fileId, children }: Props) => {
         throw new Error("Failed to send message");
       }
 
-      return response.json();
+      return response.body;
     },
   });
 
