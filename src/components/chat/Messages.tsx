@@ -48,8 +48,21 @@ function Messages({ fileId }: MessagesProps) {
             combinedMessages[i].isUserMessage;
 
           if (i === combinedMessages.length - 1) {
-            return <Message />;
-          } else return <Message />;
+            return (
+              <Message
+                message={message}
+                isNextMessageSamePerson={isNextMessageSamePerson}
+                key={message.id}
+              />
+            );
+          } else
+            return (
+              <Message
+                message={message}
+                isNextMessageSamePerson={isNextMessageSamePerson}
+                key={message.id}
+              />
+            );
         })
       ) : isLoading ? (
         <div className="w-full flex flex-col gap-2">

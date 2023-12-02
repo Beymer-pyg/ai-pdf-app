@@ -46,7 +46,6 @@ function ChatInput({ isDisabled }: ChatInputProps) {
                 disabled={isLoading || isDisabled}
                 className="absolute bottom-1.5 right-[8px]"
                 aria-label="send message"
-                type="submit"
                 onClick={() => {
                   addMessage();
 
