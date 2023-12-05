@@ -19,14 +19,14 @@ const Page = async () => {
   return (
     <div>
       <Dashboard />
-
-      {user.email !== null ? (
-        <div>Usuario logueado: {user.email}</div>
-      ) : (
-        <div>Usuario no logueado</div>
-      )}
     </div>
   );
 };
 
 export default Page;
+
+/* {user.email !== null ? (
+  <div>Usuario logueado: {user.email}</div>
+) : (
+  <div>Usuario no logueado</div>
+)} */

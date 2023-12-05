@@ -94,7 +94,8 @@ function page() {
                 <div
                   key={plan}
                   className={cn("relative rounded-2xl bg-white shadow-lg", {
-                    "border-2 border-blue-600 shadow-blue-200": plan === "Pro",
+                    "border-2 border-orange-600 shadow-blue-200":
+                      plan === "Pro",
                     "border border-gray-200": plan !== "Pro",
                   })}
                 >
@@ -137,7 +138,7 @@ function page() {
                           {negative ? (
                             <Minus className="h-6 w-6 text-gray-300" />
                           ) : (
-                            <Check className="h-6 w-6 text-blue-500" />
+                            <Check className="h-6 w-6 text-orange-500" />
                           )}
                         </div>
                         {footnote ? (
