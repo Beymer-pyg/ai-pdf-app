@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  outline: 0.1px solid green;
+  /* outline: 0.1px solid green; */
 }
 
 @layer base {
