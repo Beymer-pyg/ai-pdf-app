@@ -66,7 +66,6 @@ const Navbar = () => {
                 />
               </>
             )}
-            M
           </div>
         </div>
       </MaxWidthWrapper>
