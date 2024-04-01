@@ -48,6 +48,9 @@ function ChatWrapper({ fileId }: ChatWrapperProps) {
             <Loader2 className="h-8 w-8 text-orange-500 animate-spin" />
             <h3 className="font-semibold text-xl">Processing PDF...</h3>
             <p className="text-zinc-500 text-sm">This won&apos;t take long.</p>
+            <p className="text-red-500 text-sm font-semibold">
+              ChatGPT API has no credits
+            </p>
           </div>
         </div>
 
