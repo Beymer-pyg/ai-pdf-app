@@ -69,6 +69,9 @@ function ChatWrapper({ fileId }: ChatWrapperProps) {
               Your <span className="font-medium">Free</span> plan supports up to
               5 pages per PDF
             </p>
+            <p className="text-red-500 text-sm font-semibold">
+              ChatGPT API has no credits
+            </p>
             <Link
               href="/dashboard"
               className={buttonVariants({
